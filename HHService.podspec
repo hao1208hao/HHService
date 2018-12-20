@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HHService"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "常用的辅助工具方法,帮助减少开发时间"
 
   # This description is used to generate tags and improve search results.
