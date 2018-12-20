@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :http => "https://github.com/hao1208hao/HHService/tree/master/Products/HHService_1.0.0.zip" }
+  s.source       = { :http => "https://github.com/hao1208hao/HHService/blob/master/Products/HHService_1.0.0.zip?raw=true" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
