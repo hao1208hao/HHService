@@ -134,7 +134,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.vendored_frameworks ='HHService.framework'     #改为自己 Framework 的名称。
+  s.vendored_frameworks ='HHService/Products/HHService.framework'     #改为自己 Framework 的名称。
 
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
