@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HHService"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "常用的辅助工具方法,帮助减少开发时间"
 
   # This description is used to generate tags and improve search results.
@@ -134,7 +134,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.vendored_frameworks ='HHService/Products/HHService.framework'     #改为自己 Framework 的名称。
+  s.vendored_frameworks ='HHService.framework'     #改为自己 Framework 的名称。
 
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }

@@ -1,0 +1,6 @@
+framework module HHService {
+  umbrella header "HHService.h"
+
+  export *
+  module * { export * }
+}
