@@ -139,7 +139,7 @@
 }
 
 
--(void)sendDataToHtmlWith:(NSString *)functionName andParam:(id)reqObj andCode:(NSString*)code andMsg:(NSString*)msg{
+-(void)sendDataToHtmlWith:(NSString *)functionName andParam:(id)reqObj{
     
     id obj = reqObj;
     
@@ -149,17 +149,25 @@
     if (reqObj == nil) {
         NSDictionary* data = [NSDictionary new];
         
-        paramDict = [NSDictionary dictionaryWithObjectsAndKeys:msg,@"message",code,@"statusCode",data, @"data",
+        paramDict = [NSDictionary dictionaryWithObjectsAndKeys:@"",@"message",@"0000",@"statusCode",data, @"data",
                      nil];
     }else{
+        NSString* msg = @"";
+        NSString* statusCode = @"";
+        NSArray* data = @[];
+        
         if([obj isKindOfClass:[NSDictionary class]]){
             NSDictionary* dict =(NSDictionary*)obj;
-            paramDict = [NSDictionary dictionaryWithObjectsAndKeys:msg,@"message",code,@"statusCode",dict, @"data",
+            
+            msg = dict[@"msg"];
+            statusCode = dict[@"code"];
+            
+            paramDict = [NSDictionary dictionaryWithObjectsAndKeys:msg,@"message",statusCode,@"statusCode",dict, @"data",
                          nil];
             
-        }else if([obj isKindOfClass:[NSMutableArray class]]){
-            NSMutableArray* dataArr = (NSMutableArray*)obj;
-            paramDict = [NSDictionary dictionaryWithObjectsAndKeys:msg,@"message",code,@"statusCode",dataArr, @"data",
+        }else if([data isKindOfClass:[NSMutableArray class]]){
+            NSMutableArray* dataArr = (NSMutableArray*)data;
+            paramDict = [NSDictionary dictionaryWithObjectsAndKeys:msg,@"message",statusCode,@"statusCode",dataArr, @"data",
                          nil];
         }
     }

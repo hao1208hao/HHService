@@ -22,6 +22,7 @@ typedef void(^scanResultBlock)(NSString* result);
 /** 扫描结果代理 */
 @property(nonatomic,weak) id<scanResultDelegate> scanDelegate;
 
+//block
 @property(nonatomic,copy) scanResultBlock block;
 
 /**
@@ -29,7 +30,5 @@ typedef void(^scanResultBlock)(NSString* result);
  */
 -(void)scanQR;
 
-//block 获取扫描结果
--(void)getScanResult:(scanResultBlock)block;
 
 @end

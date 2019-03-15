@@ -46,6 +46,6 @@ typedef void(^htmlRespBlock)(NSString* functionName,NSMutableDictionary* respDic
 
 @property(nonatomic,copy) htmlRespBlock htmlBlock;
 
--(void)sendDataToHtmlWith:(NSString *)functionName andParam:(id)reqObj andCode:(NSString*)code andMsg:(NSString*)msg;
+-(void)sendDataToHtmlWith:(NSString *)functionName andParam:(id)reqObj;
 
 @end

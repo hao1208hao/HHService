@@ -112,7 +112,7 @@
 			children = (
 				A0C3BA0821CB8629001D0957 /* baseView */,
 				A0C3BA1321CB8629001D0957 /* camera */,
-				A0C3BA0421CB8628001D0957 /* extensions */,
+				A0C3BA0421CB8628001D0957 /* Category */,
 				A0C3B9E821CB8628001D0957 /* localValid */,
 				A0C3B9FB21CB8628001D0957 /* location */,
 				A0C3BA1121CB8629001D0957 /* macros */,
@@ -197,12 +197,12 @@
 			path = toast;
 			sourceTree = "<group>";
 		};
-		A0C3BA0421CB8628001D0957 /* extensions */ = {
+		A0C3BA0421CB8628001D0957 /* Category */ = {
 			isa = PBXGroup;
 			children = (
 				A0C3BA0521CB8628001D0957 /* UIView */,
 			);
-			path = extensions;
+			path = Category;
 			sourceTree = "<group>";
 		};
 		A0C3BA0521CB8628001D0957 /* UIView */ = {
